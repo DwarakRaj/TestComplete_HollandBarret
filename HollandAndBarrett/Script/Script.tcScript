@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="GenericLibrary">
+			<child name="RandomUtil" key="{4E92D5FA-660B-4902-A001-64101FFBBFC4}" path="RandomUtil.js" />
+			<child name="BaseLibrary" key="{C6525F7B-2B75-41EC-ABA8-C54F9B2BB423}" path="BaseLibrary.js" />
+			<child name="GlobalVariables" key="{9DC0C218-BC31-4CF9-9D06-AFA57F8DCB96}" path="GlobalVariables.js" />
+		</folder>
+		<folder name="Scripts">
+			<child name="TC_hab_001" key="{85C0CEAA-3687-4906-852B-74CCB6738DBC}" path="TC_hab_001.js" />
+			<child name="TC_hab_002" key="{89BA014C-5FF2-4D78-919D-E8E2D5D6E8CB}" path="TC_hab_002.js" />
+			<child name="TC_hab_003" key="{363E0763-A423-4D35-8BE8-E2F5429518AE}" path="TC_hab_003.js" />
+		</folder>
+		<folder name="Screens">
+			<child name="HomeScreen" key="{BCAEC654-8307-4591-A516-A9F81A901EFB}" path="HomeScreen.js" />
+			<child name="CreateAccountScreen" key="{43DDB37D-4ED9-4B10-B1E7-65CB43262CAD}" path="CreateAccountScreen.js" />
+			<child name="LoginScreen" key="{0F979960-CC9C-46B4-AAA8-A64D3D1F9720}" path="LoginScreen.js" />
+			<child name="CartScreen" key="{68DF0BD1-CF5B-43C0-A9B8-892144C20EA6}" path="CartScreen.js" />
+		</folder>
+		<child name="Unit1" key="{90D860B3-B841-4530-9443-C68D2CC006AD}" path="Unit1.js" />
+	</children>
+</Root>

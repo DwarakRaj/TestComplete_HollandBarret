@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{1440A866-9AAD-4326-A25B-C56678D4FB9D}">
+	<children>
+		<child name="HollandAndBarrett" key="{651EA97C-532C-40B5-9AC6-4E54545DFF97}" path="HollandAndBarrett\HollandAndBarrett.mds" />
+	</children>
+	<testItems key="{E61BAC9B-0C44-4A6F-B213-D6F6A5E914A4}">
+		<children>
+			<testItem key="{651EA97C-532C-40B5-9AC6-4E54545DFF97}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{463784BB-5FBA-492E-8DA7-7B27D8E5CD9E}" />
+	<analysis key="{857F0C2D-F0D0-4E23-8B08-C5DD8EF87617}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+</Root>
