@@ -4,6 +4,7 @@
 
 function clickOnRewardLink(){
  Aliases.browser.pageHollandBarrettUkSLeadingHeal.linkRewards.textnodeRewards.Click() 
+ Delay(3000,"Waiting for the screen to load")
 
 }
 

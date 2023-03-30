@@ -20,5 +20,6 @@ function tc_hab_003(){
   else{
     Log.Error("The Values are not matchin")
   }
-  CartScreen.removeCartItems()
+//  CartScreen.removeCartItems()
+  BaseLibrary.closeBrowser()
   }

@@ -17,13 +17,13 @@ function verifyItems(){
   Log.Message(totalItems)
   Log.Message(totalItems.includes("2 items"))
   if (qty == 1 && qty_vc == 1){
-    Log.Checkpoint("The quantuties are added to the cart")
+    Log.Checkpoint("The product are added to the cart")
   }
   else if (totalItems.includes("2 items")){
-    Log.Checkpoint("The quantuties are added to the cart")
+    Log.Checkpoint("The products were added to the cart")
   }
   else{
-    Log.Error("The quanties were not added")
+    Log.Error("The products were not added")
   }
   
 }

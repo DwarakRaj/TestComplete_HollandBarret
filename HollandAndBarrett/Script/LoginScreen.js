@@ -3,7 +3,7 @@
 
 
 function enterEmailAddress(){
-  Aliases.browser.pageSignInToYourAccountForTheBes.sectionMyAccount.formEmailAddress.textboxEmailAddress.Keys(GlobalVariables.emailId)
+  Aliases.browser.pageSignInToYourAccountForTheBes.sectionMyAccount.formEmailAddress.textboxEmailAddress.Keys(Project.Variables.userName)
 }
 
 function eneterPassword(){
@@ -21,6 +21,7 @@ function performActionLoginScreen(){
   enterEmailAddress()
   eneterPassword()
   clickOnSignIn()
+  Delay(5000,"Waiting for the screen to load")
   }
 }
 

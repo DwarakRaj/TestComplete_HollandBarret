@@ -12,7 +12,8 @@ function tc_hab_002(){
   vitaminCPrice = HomeScreen.addVitaminCtoCart()
   veganPrice = HomeScreen.addVeganChoclate()
   CartScreen.checkItemsAddedToCart()
-  CartScreen.removeCartItem()
+//  CartScreen.removeCartItem()
+  BaseLibrary.closeBrowser()
 
   
 }

@@ -7,4 +7,5 @@ function tc_had_001(){
   BaseLibrary.launchApplication()
   HomeScreen.clickOnRewardLink()
   CreateAccountScreen.performActionOnCreateAccountScreen()
+  BaseLibrary.closeBrowser()
 }

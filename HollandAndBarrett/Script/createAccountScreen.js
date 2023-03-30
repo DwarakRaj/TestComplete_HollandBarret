@@ -4,6 +4,7 @@
 
 function enterFirstName(){
   var firstName = RandomUtil.getRandamName(7)
+  Delay(2000,"waiting for the Firt Name Textbox to load")
   Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.fieldsetFirstName.textboxFirstName.Keys(firstName)
 }
 
@@ -15,12 +16,14 @@ function enterLarstName(){
 
 
 function enterEmail(){
-  Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.emailinputEmailAddress.Keys(GlobalVariables.emailId)
+  email = RandomUtil.getRandomEmail("@gmail.com",10)
+  Project.Variables.userName = email
+  Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.emailinputEmailAddress.Keys(email)
 }
 
 
 function enterPassword(){
-
+ 
   Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.passwordboxCreateAPassword.Keys(GlobalVariables.password)
   
 }

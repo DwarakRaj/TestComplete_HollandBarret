@@ -7,9 +7,36 @@
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{9CD62BB6-4F50-45B2-9693-83CE96ADB79F}" version="14">
-		<children />
+		<children>
+			<testItem name="TC_HAB_001" key="{814DFCE1-B539-48F7-AE4E-3DFA830E3B63}" group="False" parallel="False" enabled="True" testMoniker="{85C0CEAA-3687-4906-852B-74CCB6738DBC}tc_had_001" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
+			</testItem>
+			<testItem name="TC_HAB_002" key="{82E62B66-707D-4DEB-B606-81D3F74F9A08}" group="False" parallel="False" enabled="True" testMoniker="{89BA014C-5FF2-4D78-919D-E8E2D5D6E8CB}tc_hab_002" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
+			</testItem>
+			<testItem name="TC_HAB_003" key="{E283B1E1-0A40-4F2E-9219-BAD4BF42A41E}" group="False" parallel="False" enabled="True" testMoniker="{363E0763-A423-4D35-8BE8-E2F5429518AE}tc_hab_003" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
+			</testItem>
+		</children>
 	</testItems>
-	<variables key="{6DB639D1-5C54-4E07-9F67-C189B16A966A}" />
+	<variables key="{6DB639D1-5C54-4E07-9F67-C189B16A966A}">
+		<data Version="4">
+			<Items>
+				<Variable Name="userName" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="password" Type="String" Local="True">
+					<DefValue StrValue="07gaem1017" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
 	<settings key="{23DF4FD1-CC1E-4835-AD66-C1F7D9B50638}">
 		<settingsVersion value="15.49" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
