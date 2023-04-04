@@ -4,7 +4,7 @@
 
 function enterFirstName(){
   var firstName = RandomUtil.getRandamName(7)
-  Delay(2000,"waiting for the Firt Name Textbox to load")
+  Delay(6000,"waiting for the Firt Name Textbox to load")
   Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.fieldsetFirstName.textboxFirstName.Keys(firstName)
 }
 
@@ -17,6 +17,7 @@ function enterLarstName(){
 
 function enterEmail(){
   email = RandomUtil.getRandomEmail("@gmail.com",10)
+  Delay(2000,"waiting for the email text box")
   Project.Variables.userName = email
   Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.formFirstName.emailinputEmailAddress.Keys(email)
 }
@@ -51,8 +52,12 @@ function clickOnCreateAccount(){
 
 
 function verifyAccountCreated(){
+  
   confirmationText = Aliases.browser.pageRegisterHollandBarrettTheUkS.articleCreateAnAccount.textnodeAccountCreated.contentText
+  while (confirmationText.Exits){
+    Delay(5000,"waiting for the screen to load") 
   Log.Message(confirmationText)
+  }
   if (confirmationText === "Account created"){
     Log.Checkpoint("The account was succesfully created")
   }
@@ -60,6 +65,7 @@ function verifyAccountCreated(){
     Log.Error("Unable to create the account")
   }
 }
+
 
 
 function performActionOnCreateAccountScreen(){

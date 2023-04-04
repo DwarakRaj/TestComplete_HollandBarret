@@ -1,10 +1,10 @@
-﻿
+﻿//USEUNIT BaseLibrary
 
 
 
 function clickOnRewardLink(){
  Aliases.browser.pageHollandBarrettUkSLeadingHeal.linkRewards.textnodeRewards.Click() 
- Delay(3000,"Waiting for the screen to load")
+ Delay(6000,"Waiting for the screen to load")
 
 }
 
@@ -28,7 +28,8 @@ function clickOnVitamins(){
 }
 
 function clickOnVitaminC(){
-  Aliases.browser.pageVitaminsSupplementsTabletsSh.textnodeVitaminC.Click()
+  vitaminCEle = Aliases.browser.pageVitaminsSupplementsTabletsSh.textnodeVitaminC
+  vitaminCEle.Click()
 }
 
 function getVitaminPrice(){
@@ -50,6 +51,7 @@ function getPriceOfScecondVitamin(){
 
 
 function clickVitaminCItem(){
+  Delay(2000,"waiting for the screen to load")
   Aliases.browser.pageVitaminCTabletsSupplementsSh.textnodeImmunitySupport.textnodeImmunitySupport2.buttonAddToBasket.Click()
 }
 
@@ -82,7 +84,7 @@ function addVeganChoclateSecondToCart(){
 }
 
 function getPriceOfSecondVeganChoclate(){
-  price = Sys.Browser("edge").Page("https://www.hollandandbarrett.com/shop/food-drink/snacks/chocolate-cakes-biscuits/chocolate/?t=advisorymessage_vegan").FindElement("//span[text()='15.99']").contentText
+  price = Sys.Browser("edge").Page("https://www.hollandandbarrett.com/shop/food-drink/snacks/chocolate-cakes-biscuits/chocolate/?t=advisorymessage_vegan").FindElement("//span[text()='12.00']").contentText
   priceLst = price.split("\n")
   return Number(priceLst[1])
   

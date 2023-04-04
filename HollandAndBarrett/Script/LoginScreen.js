@@ -15,6 +15,14 @@ function clickOnSignIn(){
 }
 
 
+
+function signOut(){
+  ele = Sys.Browser("edge").Page("*").FindElement("[data-test='menu-item-link']")
+  ele.HoverMouse()
+  Sys.Browser("edge").Page("*").FindElement("//button[.='Sign Out']").Click()
+}
+
+
 function performActionLoginScreen(){
   ele=Aliases.browser.pageHollandBarrettUkSLeadingHeal.buttonAccount
   if (ele.Exists){
